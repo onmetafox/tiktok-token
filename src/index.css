@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-ExtraBold.ttf');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-Italic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'jakarta';
+  src: url('./assets/fonts/PlusJakartaSans-Light.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  max-width: 6px;
+  max-height: 6px;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: #e3e4e6;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #072635;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #111;
+}

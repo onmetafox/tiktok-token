@@ -1,0 +1,112 @@
+.about {
+  margin-top: -100px;
+  z-index: 10;
+  min-height: 700px;
+}
+.red-effect {
+  width: calc(100vw - 280px);
+  height: 700px;
+  background-color: #fe2c56;
+  border-radius: 0 0 130px 0px;
+  position: absolute;
+  left: -70px;
+  top: -80px;
+  transform: rotate(-5.7deg);
+  mix-blend-mode: screen;
+}
+.blue-effect {
+  width: calc(100vw - 280px);
+  height: 550px;
+  background-color: #24f5ee;
+  border-radius: 130px 0 0 0;
+  position: absolute;
+  right: -70px;
+  top: 100px;
+  transform: rotate(-5.7deg);
+  mix-blend-mode: screen;
+}
+.red-gradient {
+  background: linear-gradient(180deg, #fe2c55 0%, #591220 82.31%),
+    linear-gradient(180deg, rgba(108, 108, 108, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  &:hover {
+    background: linear-gradient(180deg, #292929 0%, #000000 100%),
+      linear-gradient(180deg, rgba(108, 108, 108, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+.black-gradient {
+  background: linear-gradient(180deg, #292929 0%, #000000 100%),
+    linear-gradient(180deg, rgba(108, 108, 108, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  &:hover {
+    background: linear-gradient(180deg, #fe2c55 0%, #591220 82.31%),
+      linear-gradient(180deg, rgba(108, 108, 108, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+.default-shadow {
+  box-shadow: 0px 0px 0.5px 0px #ffffff;
+}
+.about {
+  background-image: url('/src/assets/images/bg-effect.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.content {
+  background-image: url('/src/assets/images/content-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 100px;
+}
+.detail {
+  background-image: url('/src/assets/images/content-effect.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.buy {
+  background-image: url('/src/assets/images/buy-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -275px;
+}
+.toknomic {
+  background-image: url('/src/assets/images/faq-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* .faq {
+    background-image: url('/src/assets/images/faq-effect.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+} */
+.join {
+  background-image: url('/src/assets/images/join-effect.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.rectangle {
+  width: 480px;
+  height: 540px;
+  gap: 0px;
+  opacity: 0px;
+  background: linear-gradient(180deg, #24f5ef 0%, rgba(36, 245, 239, 0) 100%);
+  left: 12;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .red-effect {
+    width: calc(100vw + 280px);
+    left: -70px;
+    height: 900px;
+  }
+  .blue-effect {
+    width: calc(100vw + 280px);
+    height: 750px;
+    right: -70px;
+    top: 350px;
+  }
+}
